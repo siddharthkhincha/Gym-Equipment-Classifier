@@ -14,7 +14,7 @@ Currently the Neural Network can accurately classify the following equipment:
  * Rowing
  * Treadmill
 
-_____
+
 Data
 -------
 To my surprise, there was no existing dataset classifying gym equpiment. The entire dataset used for this project was compiled through web scraping.
@@ -22,26 +22,26 @@ Every single image was cross verified to avoid issues such as wrongly classified
 The dataset contains 1472 images across the 6 classes:
  * Train Set : 1189
  * Test Set  : 283
-___
+
 Model
 -------
 The CNN model used is based on the Resnet50 architecture. 
 To speed up training, the model weights were initialised to the imagenet weights.
 ![Resnet Architecture](https://www.researchgate.net/publication/331364877/figure/fig3/AS:741856270901252@1553883726825/Left-ResNet50-architecture-Blocks-with-dotted-line-represents-modules-that-might-be.png)
 
-___________________
+
 Results
 ------
 On applying several image augmentation techniques and hyperparameter tuning, the model was able to achieve a 89% accuracy on the test set, which given the limited dataset size and the existing ambiguity in classifying equipment, is a great score.
+![Training Plot](https://github.com/siddharthkhincha/Gym-Equipment-Classifier/blob/master/plot.png)
 
-_____
 License
 -------
 
 **MIT**, see `LICENSE.txt` for further details.
 
 
-____
+
 Contribute
 ----------
 
