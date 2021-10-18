@@ -22,7 +22,7 @@ def download_data(url,num_images=100,location_to_save=''):
 
 
 
-if __name__=='main':
+if __name__=='__main__':
 	url = input("Enter the URL of the google search to scrape images off")
 	location_to_save = input("Enter the location to save the images at") 
 	num_images = input("Enter the number of images to download")
